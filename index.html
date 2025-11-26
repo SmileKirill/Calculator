@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Calculator</title>
+  <title>Калькулятор</title>
   <style>
     body {
       margin: 0;
@@ -20,13 +20,13 @@
       background: #222;
       padding: 20px;
       border-radius: 15px;
-      width: 90%;
-      max-width: 350px;
+      width: 100%;
+      max-width: 700px;
       box-shadow: 0 0 15px rgba(255, 0, 0, 0.5);
     }
 
     input {
-      width: 100%;
+      width: 95%;
       padding: 15px;
       font-size: 22px;
       border: none;
@@ -36,7 +36,7 @@
     }
 
     button {
-      width: 23%;
+      width: 20%;
       padding: 15px;
       margin: 1%;
       font-size: 20px;
@@ -51,7 +51,6 @@
       background: red;
     }
 
-    /* === СКРИМЕР === */
     #screamer {
       display: none;
       position: fixed;
@@ -66,7 +65,7 @@
     }
 
     #screamer img {
-      width: 100%;
+      width: 90%;
       max-width: 600px;
     }
   </style>
@@ -80,33 +79,35 @@
     <button onclick="press('7')">7</button>
     <button onclick="press('8')">8</button>
     <button onclick="press('9')">9</button>
-    <button onclick="press('/')">/</button>
+
+        <button onclick="press('6')">6</button>
 
     <button onclick="press('4')">4</button>
     <button onclick="press('5')">5</button>
-    <button onclick="press('6')">6</button>
-    <button onclick="press('*')">*</button>
+
+
 
     <button onclick="press('1')">1</button>
     <button onclick="press('2')">2</button>
     <button onclick="press('3')">3</button>
-    <button onclick="press('-')">-</button>
 
-    <button onclick="press('0')">0</button>
+        <button onclick="press('0')">0</button>
+
+            <button onclick="press('*')">*</button>
+    <button onclick="press('-')">-</button>
     <button onclick="press('.')">.</button>
+        <button onclick="press('/')">/</button>
     <button onclick="calculate()">=</button>
     <button onclick="press('+')">+</button>
   </div>
 </div>
 
-<!-- === ВСТАВЛЯЕШЬ СВОЁ ИЗОБРАЖЕНИЕ СКРИМЕРА ТУТ === -->
-<!-- ПРИМЕР: src="screamer.png" -->
+
 <div id="screamer">
   <img id="screamImg" src="Group 72 (3).png" alt="scream" />
 </div>
 
-<!-- === ВСТАВЛЯЕШЬ СВОЙ ЗВУК СКРИМЕРА ТУТ === -->
-<!-- ПРИМЕР: src="screamer_sound.mp3" -->
+
 <audio id="screamSound" src="Kookoo_Died.wav"></audio>
 
 <script>
@@ -142,4 +143,5 @@
 
 </body>
 </html>
+
 
